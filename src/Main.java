@@ -1,39 +1,28 @@
-import java.util.Scanner;
-
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args){
 
-        int cal;
+// Desarrollado con un FOR
 
-        System.out.println("Ingrese su calificacion");
-        Scanner scanner = new Scanner(System.in);
-        cal = scanner.nextInt();
+    int n = 10;
+    int suma = 0;
 
-        switch (cal){
-            case 1:
-            case 2:
-                System.out.println("Su calificacion es: F");
-                break;
-            case 3:
-            case 4:
-                System.out.println("Su calificacion es: D");
-                break;
-            case 5:
-            case 6:
-                System.out.println("Su calificacion es: C");
-                break;
-            case 7:
-            case 8:
-                System.out.println("Su calificacion es: B");
-                break;
-            case 9:
-            case 10:
-                System.out.println("Su calificacion es: A");
-                break;
+        for (int i = 1; i <= n; i++) {
+        suma += i;
+    }
+        System.out.println("Con for:\nLa suma de los números enteros del 1 al 10 con un FOR es: " + suma);
 
-            default:
-                System.out.println("Número no válido, por favor verifique");
+// Desarrollado con un WHILE
+        int a = 10;
+        int sumatoria = 0;
+        int i = 1;
+
+        while (i <= a) {
+            sumatoria += i;
+            i++;
         }
+        System.out.println("Con While:\nLa suma de los números enteros del 1 al 10 con un WHILE es: " + sumatoria);
+
+
 
     }
 }
